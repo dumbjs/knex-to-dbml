@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests",
+    "test": "mocha --exit ./tests",
     "fix": "prettier --write ."
   },
   "dependencies": {
