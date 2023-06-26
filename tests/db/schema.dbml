@@ -1,0 +1,12 @@
+Table users {
+	 id integer [pk]
+	 hello text
+}
+
+Table user_rel {
+	 id integer [pk]
+	 hello text
+	 user_id integer
+}
+
+Ref:user_rel.user_id > users.id

@@ -1,0 +1,26 @@
+{
+  "name": "knex-to-dbml",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@ungap/with-resolvers": "^0.1.0",
+    "knex-schema-inspector": "^3.0.1"
+  },
+  "prettier": "@barelyhuman/prettier-config",
+  "devDependencies": {
+    "@barelyhuman/prettier-config": "^1.1.0",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "knex": "^2.4.2",
+    "mocha": "^10.2.0",
+    "mocha-chai-jest-snapshot": "^1.1.4",
+    "prettier": "^2.8.8",
+    "sqlite3": "^5.1.6",
+    "typescript": "^5.1.3"
+  }
+}
