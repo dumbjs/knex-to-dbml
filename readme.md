@@ -1,19 +1,24 @@
 # knex-to-dbml
 
-It's hard to memorize every change that you've possibly made with migrations when working with knex or any query builder system. 
+`knex-to-dbml` is a library that generates a DBML instance from a `knex` connection instance. It simplifies the process of defining table columns, so you don't have to repeatedly go through migration files.
 
-One such solution is to use ORM's like bookshelf / objection and define the table columns as properties on the model which is a pretty redundant and time taking task and easy to miss. 
+## Why use `knex-to-dbml`?
 
-This is where `knex-to-dbml` comes in, it's a simple library that takes in a `knex` connection instance and generates a DBML instance for you. 
+ORMs like bookshelf/objection require you to define table columns as properties on the model, which can be a redundant and time-consuming task. `knex-to-dbml` simplifies this process by generating a DBML instance for you.
 
-> I wasn't able to find one so I built one. 
-
-This DBML can then be visualised over at [dbdiagram.io](https://dbdiagram.io/d) or used with other services to even migrate from knex to let's say Prisma / kysely. 
+The generated DBML can be visualized over at [dbdiagram.io](https://dbdiagram.io/d) or used with other services to migrate from knex to other query builders like Prisma or kysely.
 
 ## Usage
 
-> **Note**: This library writes to disk and is hence not side-effect free 
-> We might split the API into 2 functions over the versions but know that it's not side-effect free right now (v0.0.3)
+> **Note**: This library writes to disk and is not side-effect free. So, be careful and don't blame us if your computer explodes.
+
+### Installation
+
+```bash
+npm install knex-to-dbml
+```
+
+### API
 
 ```ts
 type Options = {
@@ -24,15 +29,19 @@ type Options = {
 async function exportSchema(knex: KnexClient, outDir: string, options: Options)
 ```
 
-**Example**
+### Example
 
 ```js
-await exportSchema(knexInstance, join('./db')) //=> Writes a .dbml file to `./db` directory
+const exportSchema  = require('knex-to-dbml');
+const path = require('path');
+
+await exportSchema(knexInstance, path.join(__dirname, 'db')); // Writes a .dbml file to `./db` directory
 ```
 
 ## Support
 
-If this library has helped you in any way or form, do consider donating to either this repository or any other open source repository that you feel like needs support.
+If this library has helped you in any way, please consider donating to this repository or any other open source repository that you feel needs support.
 
 ## License 
+
 [MIT](/LICENSE)
