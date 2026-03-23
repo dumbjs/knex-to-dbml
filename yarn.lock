@@ -1636,10 +1636,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-knex-schema-inspector@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/knex-schema-inspector/-/knex-schema-inspector-3.0.1.tgz#7c252d1b3b4d8f7b2d20273ea8ce1d2deeba53f4"
-  integrity sha512-ofglN/HoHYhNxQJbuuKEj0vtVsBpEVlbvfoFd9lPn1ABzJHdwZmKLquCYbVLTXZIN0O6y6DDEuN4EqBKMhH+xQ==
+knex-schema-inspector@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/knex-schema-inspector/-/knex-schema-inspector-3.1.0.tgz#ccdb12d6b587ff5c2a6406dd21a978120b4fd80e"
+  integrity sha512-qEwBs7bDSufTq5bOiT783KS3g340WjidmTKA0Iu3Fxw50Iot1sIeAaQ5mjdKjRhdVwbSy2t/RdRxJqLnh2KWhw==
   dependencies:
     lodash.flatten "^4.4.0"
     lodash.isnil "^4.0.0"
