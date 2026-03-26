@@ -20,7 +20,7 @@
     "mocha": "^10.2.0",
     "mocha-chai-jest-snapshot": "^1.1.4",
     "prettier": "^2.8.8",
-    "sqlite3": "^5.1.6",
+    "sqlite3": "^6.0.1",
     "typescript": "^5.1.3"
   }
 }
