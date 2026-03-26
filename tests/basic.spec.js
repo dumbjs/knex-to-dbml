@@ -17,6 +17,7 @@ let knexInstance
 before(async () => {
   knexInstance = knex({
     client: 'sqlite',
+    useNullAsDefault: true,
     connection: ':memory:',
   })
 
