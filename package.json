@@ -16,7 +16,7 @@
     "bumpp": "^11.0.1",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
-    "knex": "^2.4.2",
+    "knex": "^3.2.6",
     "mocha": "^10.2.0",
     "mocha-chai-jest-snapshot": "^1.1.4",
     "prettier": "^2.8.8",
