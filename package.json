@@ -13,7 +13,7 @@
   "prettier": "@barelyhuman/prettier-config",
   "devDependencies": {
     "@barelyhuman/prettier-config": "^1.1.0",
-    "bumpp": "^9.1.1",
+    "bumpp": "^11.0.1",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
     "knex": "^2.4.2",
