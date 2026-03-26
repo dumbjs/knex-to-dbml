@@ -2,13 +2,11 @@ const chai = require('chai')
 const chaiAsPromised = require('chai-as-promised')
 const fs = require('fs')
 const knex = require('knex').default
-const { jestSnapshotPlugin } = require('mocha-chai-jest-snapshot')
 const { join } = require('path')
 const { before } = require('mocha')
 
 const exportSchema = require('../index.js')
 
-chai.use(jestSnapshotPlugin())
 chai.use(chaiAsPromised)
 
 const { expect } = chai
@@ -45,6 +43,17 @@ describe('exportSchema', () => {
       console.error(err)
     }
     const data = fs.readFileSync(join(__dirname, './db', 'schema.dbml'), 'utf8')
-    expect(data).toMatchSnapshot()
+    expect(data).to.be.equal(`Table users {
+	 id integer [pk]
+	 hello text
+}
+
+Table user_rel {
+	 id integer [pk]
+	 hello text
+	 user_id integer
+}
+
+Ref:user_rel.user_id > users.id`)
   })
 })

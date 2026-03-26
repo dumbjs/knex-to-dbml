@@ -14,11 +14,10 @@
   "devDependencies": {
     "@barelyhuman/prettier-config": "^1.1.0",
     "bumpp": "^11.0.1",
-    "chai": "^4.3.7",
+    "chai": "^6.2.2",
     "chai-as-promised": "^7.1.1",
     "knex": "^3.2.6",
-    "mocha": "^10.2.0",
-    "mocha-chai-jest-snapshot": "^1.1.7",
+    "mocha": "^11.7.5",
     "prettier": "^3.8.1",
     "sqlite3": "^6.0.1",
     "typescript": "^5.1.3"
