@@ -15,7 +15,7 @@
     "@barelyhuman/prettier-config": "^1.1.0",
     "bumpp": "^11.0.1",
     "chai": "^6.2.2",
-    "chai-as-promised": "^7.1.1",
+    "chai-as-promised": "^8.0.2",
     "knex": "^3.2.6",
     "mocha": "^11.7.5",
     "prettier": "^3.8.1",
