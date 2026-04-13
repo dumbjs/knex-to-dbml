@@ -18,7 +18,7 @@
     "chai-as-promised": "^7.1.1",
     "knex": "^3.2.6",
     "mocha": "^11.7.5",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "sqlite3": "^6.0.1",
     "typescript": "^5.1.3"
   }
